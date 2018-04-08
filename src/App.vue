@@ -8,9 +8,7 @@
                 <skills-list :skills="skills" />
             </div>
             <div class="col-5">
-                <div class="text-center item" id="foto-container">
-                    <img :src="'./src/assets/'+photo" width="53%" id="foto" class="rounded-circle">
-                </div>
+                <profile-photo :photo="photo" />
                 <personal-info :info="personalInfo" />
                 <contact :contact="contact"/>
                 <languages-list :languages="languages"/>
@@ -28,6 +26,7 @@ import SkillsList from './components/SkillsList.vue';
 import PersonalInfo from './components/PersonalInfo.vue';
 import Contact from './components/Contact.vue';
 import LanguagesList from './components/LanguagesList.vue';
+import ProfilePhoto from './components/ProfilePhoto.vue';
 
 export default {
   name: 'app',
@@ -37,7 +36,7 @@ export default {
 
   components: {
     MyName, StudiesList, ExperienceList, SkillsList,
-    PersonalInfo, Contact, LanguagesList
+    PersonalInfo, Contact, LanguagesList, ProfilePhoto
   }
 }
 </script>

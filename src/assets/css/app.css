@@ -15,7 +15,6 @@ table tr:first-child td {
   padding: 1.25rem;
 }
 #foto {
-    /*filter: grayscale(100%);*/
     border: 1.4px #ccc solid;
     padding: 8px;
 }
