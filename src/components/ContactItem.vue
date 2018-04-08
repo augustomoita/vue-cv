@@ -1,10 +1,16 @@
 <template lang="html">
   <tr>
       <td width="10%" class="text-center">
-        <slot name="icon"></slot>
+        <i :class="'fa fa-' + icon"></i>
       </td>
       <td>
-        <slot name="contact"></slot>
+        <slot></slot>
       </td>
   </tr>
 </template>
+
+<script>
+  export default {
+    props: ["icon"]
+  }
+</script>

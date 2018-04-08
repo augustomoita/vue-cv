@@ -4,7 +4,7 @@
       <div class="card-block">
           <ul class="skills-list">
               <li v-for="k in skills">
-                <skill :skill="k" /></skill>
+                <skill :skill="k"></skill>
               </li>
           </ul>
       </div>

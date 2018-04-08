@@ -4,37 +4,17 @@
       <div class="card-block">
           <table class="table">
               <tbody>
-                  <contact-item>
-                    <template slot="icon">
-                      <i class="fa fa-home"></i>
-                    </template>
-                    <template slot="contact">
+                  <contact-item icon="home">
                       {{ contact.address }}
-                    </template>
                   </contact-item>
-                  <contact-item>
-                    <template slot="icon">
-                      <i class="fa fa-envelope"></i>
-                    </template>
-                    <template slot="contact">
+                  <contact-item icon="envelope">
                       {{ contact.email }}
-                    </template>
                   </contact-item>
-                  <contact-item>
-                    <template slot="icon">
-                      <i class="fa fa-phone"></i>
-                    </template>
-                    <template slot="contact">
+                  <contact-item icon="phone">
                       {{ contact.phone }}
-                    </template>
                   </contact-item>
-                  <contact-item>
-                    <template slot="icon">
-                      <i class="fa fa-github"></i>
-                    </template>
-                    <template slot="contact">
+                  <contact-item icon="github">
                       {{ contact.github }}
-                    </template>
                   </contact-item>
               </tbody>
           </table>

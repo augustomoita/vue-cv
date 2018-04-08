@@ -4,29 +4,14 @@
       <div class="card-block">
           <table class="table">
               <tbody>
-                  <personal-info-item>
-                    <template slot="icon">
-                        <i class="fa fa-id-card-o"></i>
-                    </template>
-                    <template slot="info">
+                  <personal-info-item icon="id-card-o">
                       {{ info.dni }}
-                    </template>
                   </personal-info-item>
-                  <personal-info-item>
-                    <template slot="icon">
-                        <i class="fa fa-calendar"></i>
-                    </template>
-                    <template slot="info">
+                  <personal-info-item icon="calendar">
                       {{ info.birthday|format }} - {{ age }} años
-                    </template>
                   </personal-info-item>
-                  <personal-info-item>
-                    <template slot="icon">
-                        <i class="fa fa-male"></i>
-                    </template>
-                    <template slot="info">
+                  <personal-info-item icon="male">
                       {{ info.civilStatus }}
-                    </template>
                   </personal-info-item>
               </tbody>
           </table>

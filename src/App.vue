@@ -1,44 +1,44 @@
 <template>
   <div id="app" class="container">
-        <div class="row">
-            <div class="col-7">
-                <my-name :name="name"/>
-                <studies-list :studies="studies"/>
-                <experience-list :experiences="experience" />
-                <skills-list :skills="skills" />
-            </div>
-            <div class="col-5">
-                <profile-photo :photo="photo" />
-                <personal-info :info="personalInfo" />
-                <contact :contact="contact"/>
-                <languages-list :languages="languages"/>
-            </div>
-        </div>
+    <div class="row">
+      <div class="col-7">
+        <my-name :name="name"/>
+        <studies-list :studies="studies"/>
+        <experience-list :experiences="experience" />
+        <skills-list :skills="skills" />
+      </div>
+      <div class="col-5">
+        <profile-photo :photo="photo" />
+        <personal-info :info="personalInfo" />
+        <contact :contact="contact"/>
+        <languages-list :languages="languages"/>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import cv from './data.js';
-import MyName from './components/MyName.vue';
-import StudiesList from './components/StudiesList.vue';
-import ExperienceList from './components/ExperienceList.vue';
-import SkillsList from './components/SkillsList.vue';
-import PersonalInfo from './components/PersonalInfo.vue';
-import Contact from './components/Contact.vue';
-import LanguagesList from './components/LanguagesList.vue';
-import ProfilePhoto from './components/ProfilePhoto.vue';
+  import cv from './data.js';
+  import MyName from './components/MyName.vue';
+  import StudiesList from './components/StudiesList.vue';
+  import ExperienceList from './components/ExperienceList.vue';
+  import SkillsList from './components/SkillsList.vue';
+  import PersonalInfo from './components/PersonalInfo.vue';
+  import Contact from './components/Contact.vue';
+  import LanguagesList from './components/LanguagesList.vue';
+  import ProfilePhoto from './components/ProfilePhoto.vue';
 
-export default {
-  name: 'app',
-  data () {
-    return cv
-  },
+  export default {
+    name: 'app',
+    data () {
+      return cv
+    },
 
-  components: {
-    MyName, StudiesList, ExperienceList, SkillsList,
-    PersonalInfo, Contact, LanguagesList, ProfilePhoto
+    components: {
+      MyName, StudiesList, ExperienceList, SkillsList,
+      PersonalInfo, Contact, LanguagesList, ProfilePhoto
+    }
   }
-}
 </script>
 
 <style lang="scss">
