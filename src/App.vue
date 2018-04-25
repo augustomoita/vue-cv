@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="container">
     <div class="row">
-      <transition name="desde-izq" @after-enter="showDer = true">
-        <div class="col-7" v-if="showIzq">
+      <transition name="desde-izq" appear @after-appear="showRightCol = true">
+        <div class="col-7">
           <my-name :name="name"/>
           <studies-list :studies="studies"/>
           <experience-list :experiences="experience" />
@@ -10,7 +10,7 @@
         </div>
       </transition>
       <transition name="desde-der">
-        <div class="col-5" v-if="showDer">
+        <div class="col-5" v-show="showRightCol">
           <profile-photo :photo="photo" />
           <personal-info :info="personalInfo" />
           <contact :contact="contact"/>
@@ -32,18 +32,10 @@
   import LanguagesList from './components/LanguagesList.vue';
   import ProfilePhoto from './components/ProfilePhoto.vue';
 
-  cv.showIzq = false
-  cv.showDer = false
   export default {
     name: 'app',
     data () {
-      return cv
-    },
-    created: function () {
-      let app = this
-      setTimeout(function () {
-        app.showIzq = true
-      }, 0)
+      return { ...cv, showRightCol: false }
     },
     components: {
       MyName, StudiesList, ExperienceList, SkillsList,
