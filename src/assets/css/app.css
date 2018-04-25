@@ -63,3 +63,15 @@ ul.skills-list li {
 .descripcion > p:last-child {
     margin-bottom: 1.1rem;
 }
+
+.desde-izq-enter {
+  transform: translateX(-150px);
+  opacity: 0;
+}
+.desde-izq-enter-active, .desde-der-enter-active {
+  transition: all .8s ease-in;
+}
+.desde-der-enter {
+  transform: translateX(150px);
+  opacity: 0;
+}

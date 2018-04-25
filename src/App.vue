@@ -1,18 +1,22 @@
 <template>
   <div id="app" class="container">
     <div class="row">
-      <div class="col-7">
-        <my-name :name="name"/>
-        <studies-list :studies="studies"/>
-        <experience-list :experiences="experience" />
-        <skills-list :skills="skills" />
-      </div>
-      <div class="col-5">
-        <profile-photo :photo="photo" />
-        <personal-info :info="personalInfo" />
-        <contact :contact="contact"/>
-        <languages-list :languages="languages"/>
-      </div>
+      <transition name="desde-izq" @after-enter="showDer = true">
+        <div class="col-7" v-if="showIzq">
+          <my-name :name="name"/>
+          <studies-list :studies="studies"/>
+          <experience-list :experiences="experience" />
+          <skills-list :skills="skills" />
+        </div>
+      </transition>
+      <transition name="desde-der">
+        <div class="col-5" v-if="showDer">
+          <profile-photo :photo="photo" />
+          <personal-info :info="personalInfo" />
+          <contact :contact="contact"/>
+          <languages-list :languages="languages"/>
+        </div>
+      </transition>
     </div>
   </div>
 </template>
@@ -28,12 +32,19 @@
   import LanguagesList from './components/LanguagesList.vue';
   import ProfilePhoto from './components/ProfilePhoto.vue';
 
+  cv.showIzq = false
+  cv.showDer = false
   export default {
     name: 'app',
     data () {
       return cv
     },
-
+    created: function () {
+      let app = this
+      setTimeout(function () {
+        app.showIzq = true
+      }, 0)
+    },
     components: {
       MyName, StudiesList, ExperienceList, SkillsList,
       PersonalInfo, Contact, LanguagesList, ProfilePhoto
