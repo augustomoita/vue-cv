@@ -3,7 +3,7 @@
       <div class="card-header"><i class="fa fa-graduation-cap"></i> Estudios </div>
       <div class="card-block">
           <ul>
-              <li class="descripcion" v-for="s in studies">
+              <li class="item" v-for="s in studies">
                   <study :study="s"></study>
               </li>
           </ul>

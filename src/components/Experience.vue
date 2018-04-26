@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <div class="experience-item">
     <p>{{ experience.period }}</p>
     <h5>{{ experience.place }}</h5>
     <p class="subtitulo">{{ experience.position }}</p>

@@ -3,7 +3,7 @@
       <div class="card-header"><i class="fa fa-suitcase"></i> Experiencia Laboral </div>
       <div class="card-block">
           <ul>
-              <li class="descripcion" v-for="e in experiences">
+              <li class="item" v-for="e in experiences">
                 <experience :experience="e"></experience>
               </li>
           </ul>

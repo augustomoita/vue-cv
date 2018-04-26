@@ -2,20 +2,18 @@
   <div id="app" class="container">
     <div class="row">
       <transition name="desde-izq" appear @after-appear="showRightCol = true">
-        <div class="col-7">
-          <my-name :name="name"/>
-          <studies-list :studies="studies"/>
-          <experience-list :experiences="experience" />
-          <skills-list :skills="skills" />
-        </div>
+        <left-column
+          :name="name"
+          :studies="studies"
+          :experiences="experience"
+          :skills="skills" />
       </transition>
       <transition name="desde-der">
-        <div class="col-5" v-show="showRightCol">
-          <profile-photo :photo="photo" />
-          <personal-info :info="personalInfo" />
-          <contact :contact="contact"/>
-          <languages-list :languages="languages"/>
-        </div>
+        <right-column v-show="showRightCol"
+          :photo="photo"
+          :info="personalInfo"
+          :contact="contact"
+          :languages="languages"/>
       </transition>
     </div>
   </div>
@@ -23,14 +21,8 @@
 
 <script>
   import cv from './data.js';
-  import MyName from './components/MyName.vue';
-  import StudiesList from './components/StudiesList.vue';
-  import ExperienceList from './components/ExperienceList.vue';
-  import SkillsList from './components/SkillsList.vue';
-  import PersonalInfo from './components/PersonalInfo.vue';
-  import Contact from './components/Contact.vue';
-  import LanguagesList from './components/LanguagesList.vue';
-  import ProfilePhoto from './components/ProfilePhoto.vue';
+  import LeftColumn from './components/LeftColumn.vue';
+  import RightColumn from './components/RightColumn.vue';
 
   export default {
     name: 'app',
@@ -38,8 +30,7 @@
       return { ...cv, showRightCol: false }
     },
     components: {
-      MyName, StudiesList, ExperienceList, SkillsList,
-      PersonalInfo, Contact, LanguagesList, ProfilePhoto
+      LeftColumn, RightColumn
     }
   }
 </script>

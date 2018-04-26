@@ -60,8 +60,8 @@ ul.skills-list li {
     margin: 0;
 }
 
-.descripcion > p:last-child {
-    margin-bottom: 1.1rem;
+.item {
+    margin-bottom: 1.3rem;
 }
 
 .desde-izq-enter {
