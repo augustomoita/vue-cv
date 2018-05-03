@@ -7,7 +7,7 @@ export default {
     civilStatus: 'Soltero'
   },
   contact: {
-    address: 'Calle 528 N° 3665, La Plata',
+    location: 'La Plata, Argentina',
     email: 'a94moita@outlook.com',
     phone: '2216712233',
     github: 'agusmoita'

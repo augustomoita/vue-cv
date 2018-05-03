@@ -5,7 +5,7 @@
           <table class="table">
               <tbody>
                   <contact-item icon="home">
-                      {{ contact.address }}
+                      {{ contact.location }}
                   </contact-item>
                   <contact-item icon="envelope">
                       {{ contact.email }}
