@@ -21,12 +21,13 @@ export default {
       degree: 'Analista Programador Universitario',
       place: 'Facultad de Informática, U.N.L.P.',
       description: 'Cursando actualmente'
-    },
-    {
-      degree: 'Cursos online',
-      place: 'Platzi.com',
-      description: 'Ver perfil en platzi.com/@agusmoita'
     }
+    //,
+    //{
+    //  degree: 'Cursos online',
+    //  place: 'Platzi.com',
+    //  description: 'Ver perfil en platzi.com/@agusmoita'
+    //}
   ],
   experience: [
     {
