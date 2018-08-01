@@ -3,8 +3,7 @@ export default {
   photo: 'perfil.jpg',
   personalInfo: {
     dni: '38.553.444',
-    birthday: new Date(1994, 9 - 1, 6),
-    civilStatus: 'Soltero'
+    birthday: new Date(1994, 9 - 1, 6)
   },
   contact: {
     location: 'La Plata, Argentina',

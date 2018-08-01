@@ -10,9 +10,6 @@
                   <personal-info-item icon="calendar">
                       {{ info.birthday|format }} - {{ age }} años
                   </personal-info-item>
-                  <personal-info-item icon="male">
-                      {{ info.civilStatus }}
-                  </personal-info-item>
               </tbody>
           </table>
       </div>
