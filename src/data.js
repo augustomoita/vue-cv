@@ -33,14 +33,14 @@ export default {
       period: 'Feb 2015 - actualidad',
       place: 'Ministerio de Salud de la Provincia de Buenos Aires',
       position: 'Desarrollador Web Symfony',
-      description: 'Utilizando Symfony 3, Bootstrap, jQuery, HTML5 y bases de datos Oracle, PostgreSql y MySql'
+      description: 'Utilizando Symfony 3, Bootstrap, jQuery, HTML5, Vue.js y bases de datos Oracle, PostgreSql y MySql'
     }
   ],
   skills: [
     'Symfony', 'Javascript', 'HTML5',
     'PHP', 'jQuery', 'CSS3',
-    'SQL', 'Node.js', 'Bootstrap',
-    'Linux', 'Vue.js', 'Python',
+    'SQL', 'Vue.js', 'Bootstrap',
+    'Linux', 'Node.js', 'Python',
     'Git y Svn', 'React', 'Armado PC',
     'Java', 'Arduino', 'Android'
   ],
