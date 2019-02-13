@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="col-7">
     <my-name :name="name"/>
-    <studies-list :studies="studies"/>
     <experience-list :experiences="experiences" />
     <skills-list :skills="skills" />
+    <studies-list :studies="studies"/>
   </div>
 </template>
 
