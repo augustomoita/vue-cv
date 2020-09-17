@@ -1,19 +1,16 @@
 <template lang="html">
   <div class="card item" id="contacto">
-      <div class="card-header"><i class="fa fa-inbox"></i> Contacto</div>
+      <div class="card-header"><i class="fa fa-info-circle"></i> Información</div>
       <div class="card-block">
           <table class="table">
               <tbody>
-                  <contact-item icon="home">
+                  <contact-item icon="fas fa-home">
                       {{ contact.location }}
                   </contact-item>
-                  <contact-item icon="envelope">
+                  <contact-item icon="fas fa-envelope">
                       {{ contact.email }}
                   </contact-item>
-                  <contact-item icon="phone">
-                      {{ contact.phone }}
-                  </contact-item>
-                  <contact-item icon="github">
+                  <contact-item icon="fab fa-github">
                       {{ contact.github }}
                   </contact-item>
               </tbody>

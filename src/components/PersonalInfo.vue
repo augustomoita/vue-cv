@@ -4,11 +4,11 @@
       <div class="card-block">
           <table class="table">
               <tbody>
-                  <personal-info-item icon="id-card-o">
+                  <personal-info-item icon="id-card">
                       {{ info.dni }}
                   </personal-info-item>
                   <personal-info-item icon="calendar">
-                      {{ info.birthday|format }} - {{ age }} años
+                      {{ age }} años
                   </personal-info-item>
               </tbody>
           </table>
@@ -29,13 +29,7 @@ export default {
   computed: {
     age: function () {
       return moment().diff(this.info.birthday, 'years')
-    }
-  },
-
-  filters: {
-    format: function (date) {
-      return moment(date).format("DD/MM/YYYY")
-    }
+    },
   }
 }
 </script>
