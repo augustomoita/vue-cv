@@ -17,6 +17,7 @@ table tr:first-child td {
 #foto {
     border: 1.4px #ccc solid;
     padding: 8px;
+    width: 53%;
 }
 #mi-nombre {
     font-family: 'Roboto Mono', monospace;

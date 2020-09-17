@@ -7,7 +7,7 @@ export default {
   },
   contact: {
     location: 'La Plata, Argentina',
-    email: 'a94moita@outlook.com',
+    email: 'augustomoita.94@gmail.com',
     phone: '2216712233',
     github: 'agusmoita'
   },
@@ -24,15 +24,15 @@ export default {
     {
       degree: 'Cursos online',
       place: 'Platzi.com',
-      description: 'Ver perfil en platzi.com/@agusmoita'
+      description: 'Ver perfil en platzi.com/@augusto.moita'
     }
   ],
   experience: [
     {
       period: 'Feb 2015 - actualidad',
       place: 'Ministerio de Salud de la Provincia de Buenos Aires',
-      position: 'Desarrollador Web Symfony',
-      description: 'Utilizando Symfony 3, Bootstrap, jQuery, HTML5, Vue.js y bases de datos Oracle, PostgreSql y MySql'
+      position: 'Desarrollador Fullstack Symfony',
+      description: 'Utilizando Symfony (2, 3 y 4), Bootstrap, jQuery, HTML5, Vue.js y bases de datos Oracle, PostgreSql y MySql'
     }
   ],
   skills: [
@@ -40,8 +40,7 @@ export default {
     'PHP', 'jQuery', 'CSS3',
     'SQL', 'Vue.js', 'Bootstrap',
     'Linux', 'Node.js', 'Python',
-    'Git y Svn', 'React', 'Armado PC',
-    'Java', 'Arduino', 'Android'
+    'Java', 'React', 'Flutter'
   ],
   languages: [
     {
